@@ -1,0 +1,381 @@
+.custom-control-input {
+    width: 100px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.linka:hover {
+    cursor: pointer
+}
+#github-link{
+   color: black
+}
+
+.about-us {
+    width: 40%;
+    font-size: 20px;
+    margin: 50px;
+    font-weight: 600;
+}
+
+.Get {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.footer {
+    width: 100%;
+    height: 120px;
+    background-color: #f0eded;
+    text-align: center;
+}
+
+td {
+    width: 22%;
+    padding: 10px;
+    border: 0.5px solid black;
+}
+
+th {
+    width: 22%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    border: 0.5px solid black;
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table-heading {
+    width: 100%;
+}
+
+#table-data {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 10px;
+    margin-right: 40px;
+    font-family: Helvetica;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid grey;
+}
+
+#header {
+    margin-top: 50px;
+    font-size: 28px;
+    font-family: Helvetica;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 297px;
+    letter-spacing: 0px;
+    box-shadow: 0px 0px 1px 1px #888888;
+}
+
+#covid {
+    font-family: Helvetica;
+    padding: 5px;
+    font-size: 30px;
+    border: 1px solid black;
+    letter-spacing: 5px;
+    box-shadow: 0px 0px 1px 1px #888888;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 191px;
+    font-family: Helvetica;
+}
+
+#header1 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: Helvetica;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 360px;
+    letter-spacing: 0px;
+    box-shadow: 0px 0px 1px 1px #888888;
+}
+
+#Preventions {
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 10px;
+    padding: -5px;
+    font-family: Helvetica;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    width: 327px;
+    letter-spacing: 5px;
+    box-shadow: 0px 0px 1px 1px #888888;
+}
+
+#corona-img {
+    height: 50px;
+    width: 55px;
+    margin-left: 20px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: -8px -6px 14px -2px #888888;
+}
+
+#indian-flag {
+    height: 40px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+.live {
+    color: red;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.blinksoft {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.1;
+    }
+}
+
+#circle-dot {
+    height: 20px;
+}
+
+.card {
+    box-shadow: 0px 0px 1px 1px #888888;
+    border: 0px solid black;
+    margin: 10px;
+    width: 12rem;
+}
+
+.card1 {
+    background: #ffc7c7;
+}
+
+.card2 {
+    background-color: #c2f0ec;
+}
+
+.card3 {
+    background-color: #d0f0c2;
+}
+
+.card4 {
+    background: linear-gradient(to right top, #de0000, #f55a4b, #ff9188, #ffc5c2, #fdf8f8);
+}
+
+.card-title {
+    letter-spacing: 0px;
+    font-family: Helvetica;
+}
+
+#pre-img {
+    width: 50px
+}
+
+.Points-img {
+    width: 48px;
+    margin: 10px;
+}
+
+.Points-Pre {
+    font-size: 18px;
+}
+
+.pre-col {
+    margin-top: 25px;
+}
+
+#cough-img {
+    margin-left: 6px;
+}
+
+#email {
+    font-family: Helvetica;
+    padding: 6px;
+    margin-left: -100px;
+}
+
+#faq {
+    font-size: 35px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 0px 0px 1px 1px #888888;
+}
+
+#faq-content {
+    margin: 10px;
+}
+
+@media (max-width: 575.98px) {
+
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    #Preventions {
+        font-size: 25px;
+        width: 235px;
+        letter-spacing: 0px;
+        padding: 4px;
+    }
+
+    #pre-img {
+        width: 40px;
+    }
+
+    #covid {
+        font-size: 28px;
+        letter-spacing: 1px;
+        width: 150px;
+        padding: 2px;
+    }
+
+    #corona-img {
+        height: 44px;
+        width: 50px;
+        margin-left: 0px;
+    }
+
+    .card {
+        width: 9rem;
+        margin: 0px;
+        margin-top: 14px;
+    }
+
+    td {
+        font-size: 11.5px;
+        border: 0px solid black;
+    }
+
+    #header {
+        font-size: 17px;
+        width: 202px;
+        letter-spacing: 0px;
+    }
+
+    #header1 {
+        margin-top: 9px;
+        font-size: 20px;
+        width: 244px;
+        letter-spacing: 0px;
+    }
+
+    .card-title {
+        font-size: 17px;
+    }
+
+    th {
+        width: 22%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 11px;
+        border: 0px solid black;
+        font-size: 14px;
+        background-color: #f2f2f2;
+    }
+
+    #table-data {
+        border: 0px solid black;
+    }
+
+    .Points-img {
+        width: 50px;
+        margin: 10px;
+    }
+
+    .Points-Pre {
+        font-size: 15px;
+    }
+
+    #email {
+        margin-left: 0px;
+    }
+
+    .footer {
+        margin-top: 0px;
+        height: 120px;
+    }
+
+    .about-us {
+        width: 90%;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+
+    .Get {
+        font-weight: 600;
+        font-size: 20px;
+        margin-left: 11px;
+        margin-top: -110px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    th {
+        border: 0px solid black;
+        background-color: #f2f2f2;
+    }
+
+    td {
+        border: 0px solid black;
+
+    }
+
+    #table-data {
+        border: 0px solid black;
+    }
+
+    #header1 {
+        width: 530px;
+    }
+
+    .Points-Pre {
+        font-size: 16px;
+    }
+
+    #email {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #email {
+        margin-left: 0px;
+    }
+}

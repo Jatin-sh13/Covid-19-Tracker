@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/covid-19.png" type="image/icon">
+    <title>FAQ</title>
+</head>
+<style>
+    .cardAcc {
+        width: 100%;
+    }
+
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgb(242 242 242 / 3%);
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+        box-shadow: 0 0 4px 0px black;
+    }
+
+    .btn-link {
+        color: black;
+    }
+</style>
+
+<body id="body-faq">
+    <div id="my">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="nav-bar">
+            <a class="navbar-brand" href="#">COVID-19 Live Tracker <img src="./images/covid-19.png" id="corona-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" id="home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br><br><br><br>
+        <div class="container">
+            <div id="faq">
+                FAQ'S
+            </div>
+            <div id="faq-content">Frequently Asked Questions</div><br>
+            <div id="accordion">
+                <div class="card cardAcc">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Q: Are you Official?
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            A: No, presently, we aren't.
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardAcc">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Q: What are the sources of the Data Shown?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            A: We are using Official handles to update the data. Furthermore, Open Source API's are
+                            available
+                            online, and we are using them as well.
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardAcc">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Q: I am looking for API's to discover data for COVID-19, Could you suggest
+                                one?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>A:<a href="https://api.covid19india.org/"> api.covid19india.org</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardAcc">
+                    <div class="card-header" id="headingfour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour"
+                                aria-expanded="false" aria-controls="collapsefour">
+                                Q.As several websites are representing different data, how can we trust
+                                this Website?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
+                        <div class="card-body">
+                            A:Nothing is Perfect in this World, and everything has flaws. Thus we believe that different
+                            sites
+                            have different data because of updation time, it varies. Yet, we are regularly using new
+                            methods to
+                            deliver the most accurate data.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let tooglevalue = document.getElementById("customSwitch1")
+    let navbar = document.getElementById("nav-bar")
+    let navbarbrand = document.querySelector(".navbar-brand")
+    let value = false;
+    tooglevalue.addEventListener("click", function () {
+        if (value == false) {
+            value = true;
+            navbar.style.backgroundColor = "#0b0621"
+            navbarbrand.style.color = "white"
+            $(".nav-link").css("color", "white")
+            $("p").css("color", "white")
+            $("#faq").css("color", "white")
+            $("#faq-content").css("color", "white")
+            $(".btn-link").css("color", "white")
+            $(".card-body").css("color", "white")
+            $(".card-body").css("background-color", "#0b0621")
+            $(".card-header").css("background-color", "#0b0621")
+            $("#body-faq").css("background-color", "#09051a")
+            $(".navbar-toggler-icon").css("background-image", "url(https://img.icons8.com/fluent/48/000000/menu--v1.png)")
+
+            return
+        }
+        if (value == true) {
+            value = false;
+            navbar.style.backgroundColor = ""
+            navbarbrand.style.color = ""
+            $(".nav-link").css("color", "")
+            $("p").css("color", "")
+            $("#body-faq").css("background-color", "")
+            $("#faq").css("color", "")
+            $("#faq-content").css("color", "")
+            $(".navbar-toggler-icon").css("background-image", "")
+            return
+        }
+    })
+</script>
+
+</html>

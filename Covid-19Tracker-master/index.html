@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Covid19</title>
+    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="index.js" async defer></script>
+    <link rel="icon" href="./images/covid-19.png" type="image/icon">
+</head>
+
+<body onresize="myFunction()">
+    <div id="my">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="nav-bar">
+            <a class="navbar-brand" href="#">COVID-19 Live Tracker <img src="./images/covid-19.png" id="corona-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#covid-19" id="Covid-19">COVID-19</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Preventions" id="preventions">Prevention</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Faq.html" target="_parent" id="fuck">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Aboutus" id="About-Us">About
+                            Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                </div>
+            </div>
+        </nav><br><br>
+        <div class="container">
+            <div data-aos="fade-right" data-aos-duration="1500">
+                <div id="header">
+                    Live Cases in India<img src="./images/india.png" id="indian-flag">
+                </div>
+            </div>
+            <span class="live blinksoft">Live<img src="https://img.icons8.com/emoji/48/000000/red-circle-emoji.png"  id="circle-dot"></span><br><br>
+            <div id="card-data">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                        <div data-aos="zoom-in-up" data-aos-duration="1500">
+                            <div class="card card1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Confirmed</h5>
+                                    <h5 id="confirmed"></h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                        <div data-aos="zoom-in-up" data-aos-duration="1500">
+                            <div class="card card2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Active</h5>
+                                    <h5 id="Active"></h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                        <div data-aos="zoom-in-up" data-aos-duration="1500">
+                            <div class="card card3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Recoverd</h5>
+                                    <h5 id="recovered"></h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                        <div data-aos="zoom-in-up" data-aos-duration="1500">
+                            <div class="card card4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Deaths</h5>
+                                    <h5 id="Deaths"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div id="header1">
+                    State Wise Cases In India
+                </div>
+            </div>
+            <br>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <table id="table-heading">
+                    <thead>
+                        <th id="state">State</th>
+                        <th id="con">Confirmed</th>
+                        <th id="Act">Active</th>
+                        <th id="Dea">Deaths</th>
+                        <th id="Rec">Recovered</th>
+                    </thead>
+                </table>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <table id="table-data">
+                </table>
+            </div>
+
+        </div>
+        <div class="container">
+            <br><br>
+            <div id="covid-19">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div id="covid">COVID-19
+                    </div>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Coronavirus_disease_2019">
+                        <P> Source Wikipedia</P>
+                    </a>
+                    <p style="text-align: justify;word-spacing: -1.5px;">Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory
+                        syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, China,
+                        and
+                        has since spread globally, resulting in an ongoing pandemic.</p>
+                    <p style="text-align: justify;word-spacing: -1.5px;">As of 27 May 2020, more than 5.61 million cases have been reported across 188 countries and
+                        territories, resulting in more than 421,000 deaths. More than 3.6 million people have recovered.
+                        Common symptoms include fever, cough, fatigue, shortness of breath, and loss of smell and taste.
+                        While most cases result in mild symptoms, some progress to acute respiratory distress syndrome
+                        (ARDS) is likely precipitated by a cytokine storm,multi-organ failure, septic shock, and blood
+                        clots. The time from exposure to onset of symptoms is typically around five days but may range
+                        from
+                        two to fourteen days. The virus is primarily spread between people during close contact, often
+                        via
+                        small droplets produced by coughing, sneezing, and talking. The droplets usually fall to the
+                        ground
+                        or onto surfaces rather than travelling through air over long distances. Less commonly, people
+                        may
+                        become infected by touching a contaminated surface and then touching their face. It is most
+                        contagious during the first three days after the onset of symptoms, although the spread is
+                        possible
+                        before symptoms appear, and from people who do not show symptoms. The standard method of
+                        diagnosis
+                        is by real-time reverse transcription-polymerase chain reaction (rRT-PCR) from a nasopharyngeal
+                        swab. Chest CT imaging may also be helpful for diagnosis in individuals where there is a high
+                        suspicion of infection based on symptoms and risk factors; however, guidelines do not recommend
+                        using CT imaging for routine screening. Recommended measures to prevent infection include
+                        frequent
+                        hand washing, maintaining physical distance from others (especially from those with symptoms),
+                        quarantine (especially for those with symptoms), covering coughs, and keeping unwashed hands
+                        away
+                        from the face. Also, the use of a face covering is recommended for those who suspect they have
+                        the
+                        virus and their caregivers. Recommendations for face-covering use by the general public vary,
+                        with
+                        some authorities recommending for them, some recommending against them (to conserve masks for
+                        healthcare workers), and others requiring their use. There is limited evidence for or against
+                        the
+                        use of masks (medical or other) in healthy individuals in the wider community. According to the
+                        World Health Organization, there are no available vaccines nor specific antiviral treatments for
+                        COVID-19. On 1 May 2020, the United States gave emergency use authorization to the antiviral
+                        redeliver for people hospitalized with severe COVID‑19. Management involves the treatment of
+                        symptoms, supportive care, isolation, and experimental measures. </p>
+                    <p style="text-align: justify;word-spacing: -1.5px;">The World Health Organization (WHO) declared the COVID‑19 outbreak a public health emergency of
+                        international concern (PHEIC) on 30 January 2020 and a pandemic on 11 March 2020. Local
+                        transmission
+                        of the disease has occurred in most countries across all six WHO regions.
+                    </p>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div id="Preventions">PREVENTION <img src="./images/Pre%20icon.png" id="pre-img"></div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 pre-col ">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="Points-Pre"><img src="./images/hand-wash.png" class="Points-img">Wash your hands often</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 pre-col">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="Points-Pre"><img src="./images/infection.png" class="Points-img">Avoid close contact</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 pre-col">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="Points-Pre"><img src="./images/mask.png" class="Points-img">Wear a cloth face cover</div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-sm-6 pre-col">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="Points-Pre"><img src="./images/cough.png" class="Points-img" id="cough-img">Cover coughs and
+                            sneezes</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 pre-col">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="Points-Pre"><img src="./images/antibacterial.png" class="Points-img">Clean and disinfect
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 pre-col">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="Points-Pre"><img src="./images/moniter%20health.png" class="Points-img">
+                            Monitor Your Health</div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <br>
+        <div id="Aboutus">
+            <div class="footer" id="foo">
+                <p style="padding: 15px">Copyright ©2020 All rights reserved</p>
+                <span style="font-size: 2em; color: black;">
+                    <a id="github-link" href="https://github.com/Jatin-sh13"><i class="fab fa-github-square linka"></i></a>
+                </span>
+                <span style="font-size: 2em; color: black;">
+                    <a href="https://www.linkedin.com/in/jatin-sharma-873318192/"><i class="fab fa-linkedin linka"></i></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
